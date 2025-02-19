@@ -291,33 +291,13 @@ function Professionals() {
 
 
 
-{/* 
-                    <div className={ProfStyle.eachCard}>
-                       
-                        <div className={ProfStyle.imgContent}>
-                          <div className={ProfStyle.cardImg}>
-                            <img src={ImgOne} 
-                            alt="Person" />
-                          </div>
-                        </div>
-                        <span className={ProfStyle.overlay}></span>
 
-                        <div className={ProfStyle.cardContent}>
-                          <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
-                          <cite>- ekitech</cite>
-                          <button className={ProfStyle.btn}>Read more</button>
-                        </div>
-                        
-                    </div> */}
                    
                    
                     
                    
                 </div>
                 <div className={ProfStyle.btnsection}>
-                        {/* <Link to ="/hiredev">
-                        <button> Hire a professional</button>
-                        </Link> */}
                   </div>
                 </div>
                 

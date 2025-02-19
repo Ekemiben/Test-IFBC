@@ -5,10 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        {/* <div className="footer-section logo-section">
-          <h2 className="logo">Ekitech</h2>
-        </div> */}
-        
+       
         <div className="footer-section menu-section">
           <ul>
             <li>Home</li>

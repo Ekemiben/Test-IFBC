@@ -1,8 +1,9 @@
+
 /* General Styles */
 body {
   margin: 0;
   padding: 0;
-  /* font-family: Arial, sans-serif; */
+  font-family: Arial, sans-serif;
   color: #333;
 }
 
@@ -33,29 +34,38 @@ h1 {
   text-align: center;
   margin-bottom: 30px;
 }
-.vision-mision{
-    display: flex;
-    justify-content: space-around;
+
+/* Vision and Mission Headings */
+.vision-mision {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-.vision-mision h2{
-    /* padding: 60px; */
-    display: flex;
-    text-align: justify;
-    text-align: center;
-    justify-content: center;
-    padding-top: 30px;
-    
-    border-radius: 100px;
-    height: 100px;
-    width: 100px;
-    background-color:#173B3F; 
-    color: #fff;
+
+.vision-mision h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  background-color: #173B3F;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+}
+.hide-me{
+  display:none;
 }
 
 /* Vision and Mission Container */
 .vision-mission-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -65,19 +75,7 @@ h1 {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.vision h2, .mission h2 {
-      padding: 30px;
-  display: flex;
-  justify-items: center;
-  font-size: 40px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 10px;
-  border-radius: 100%;
-  background-color: #333;
-
+  margin-bottom: 20px;
 }
 
 .vision p, .mission p {
@@ -101,12 +99,111 @@ h1 {
 
 .satisfaction a:hover {
   text-decoration: underline;
-  
 }
-.about-us-container p{
-      color: #000;
-      font-size: 24px;
-      line-height: 30px;
-      color:#555;
+
+.about-us-container p {
+  color: #000;
+  font-size: 24px;
+  line-height: 30px;
+  color: #555;
   font-weight: 400;
+}
+
+/* Mobile and Tablet Responsive */
+@media screen and (max-width: 768px) {
+  .about-us-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .vision-mision h2 {
+ display: none;
+}
+.hide-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  background-color: #173B3F;
+  color: #fff;
+  font-size: 20px;
+  margin: auto;
+}
+
+  .vision-mission-container {
+    flex-direction: column;
+  }
+
+  .vision, .mission {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .vision p, .mission p {
+    font-size: 14px;
+  }
+
+  .satisfaction {
+    font-size: 14px;
+  }
+
+  .about-us-container p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .vision-mision h2 {
+ display: none;
+}
+.hide-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  background-color: #173B3F;
+  color: #fff;
+  font-size: 20px;
+  margin: auto;
+}
+
+  .vision p, .mission p {
+    font-size: 12px;
+  }
+
+  .satisfaction {
+    font-size: 12px;
+  }
+
+  .about-us-container p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

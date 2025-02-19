@@ -35,8 +35,8 @@ const Application = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      localStorage.setItem("registrationData", JSON.stringify(formData));
-      setSuccessMessage("Registration successful!");
+      localStorage.setItem("applicationData", JSON.stringify(formData));
+      setSuccessMessage("Your application was successful!");
     }
   };
 

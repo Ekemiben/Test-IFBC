@@ -1,12 +1,19 @@
 
+
 import React, { useState } from "react";
 import "./navbar.css";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("/");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleClick = (path) => {
     setActiveLink(path);
+    setIsMenuOpen(false); // Close the menu when a link is clicked
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -15,8 +22,15 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="logo-section">Tech Star</div>
 
+        {/* Hamburger Icon (Visible only on mobile) */}
+        <div className="hamburger-icon" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+
         {/* Navigation Links */}
-        <div className="nav-links">
+        <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
           <ul>
             {[
               { name: "Home", path: "/" },
@@ -39,7 +53,6 @@ const Navbar = () => {
         {/* User Profile Section */}
         <div className="user-profile">
           <div className="profile-info">
-            {/* <img src="/Sign-in.png" alt="Sign-in" className="profile-image" /> */}
             <div className="profile-details">
               <span className="profile-name">Name of the person</span>
               <p className="profile-title">Title of the professional</p>
