@@ -1,0 +1,133 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  background-color: #e2e8f0; /* Equivalent to bg-slate-250 */
+  width: 100vw;
+  height: 102px;
+  /* border: 1px solid #f87171;  */
+  /* Equivalent to border-red-400 */
+}
+
+/* Navbar Content */
+.navbar-content {
+  background-color: white;
+  /* border-radius: 9999px;  */
+  /* Equivalent to rounded-full */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 8px; */
+  width: 100%;
+  height: 100px;
+  padding: 0 16px;
+  position: fixed;
+  z-index: 10;
+}
+
+/* Logo Section */
+.logo-section {
+  margin-left: 16px; /* Equivalent to ml-4 */
+  padding: 4px; /* Equivalent to p-1 */
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+/* Navigation Links */
+.nav-links {
+  width: 58%;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  padding: 8px; /* Equivalent to p-2 */
+  cursor: pointer;
+}
+
+.nav-links li.active {
+  /* background-color: #22d3ee;  */
+  /* Equivalent to bg-cyan-400 */
+  border-radius: 9999px; /* Equivalent to rounded-3xl */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Equivalent to gap-x-2 */
+  padding: 8px 12px; /* Equivalent to px-3 py-1 */
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-icon {
+  width: 15px;
+  height: 15px;
+}
+
+/* User Profile Section */
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+}
+
+.profile-details {
+  margin-left: 4px; /* Equivalent to ml-1 */
+}
+
+.profile-name {
+  font-size: 12px; /* Equivalent to text-xs */
+  font-weight: bold;
+}
+
+.profile-title {
+  font-size: 14px; /* Equivalent to text-sm */
+  color: #64748b; /* Equivalent to text-slate-500 */
+  font-weight: 300; /* Equivalent to font-thin */
+}
+
+.profile-actions {
+  display: flex;
+  gap: 16px; /* Equivalent to justify-evenly */
+  margin-left: 16px; /* Equivalent to w-20 */
+  cursor: pointer;
+}
+
+.action-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.action-icon:last-child {
+  width: 5px;
+  height: 5px;
+}

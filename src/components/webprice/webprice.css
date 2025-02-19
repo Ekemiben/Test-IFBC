@@ -1,0 +1,199 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+main{
+    background-color: #eaf1fb;
+    /* background: #1a437e; */
+    /* height:100vh; */
+    border: solid 1px #eaf1fb;
+    
+}
+section{
+    background-color:#d6eaee;
+    margin-left: 30px;
+    margin-right: 10px;
+    border-radius: 40px;
+    margin-top:70px;
+    margin-bottom:50px;   
+}
+.secondLayer{
+    display: flex;
+    justify-content: space-around;
+    border-radius:20px;  
+}
+
+
+.priceContainer{
+    background-color: #eaf1fb;
+    background-color:azure;
+    background-color:#fff;
+    margin:50px 50px 0 50px;
+    /* border-radius:30px; */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;  
+}
+.empathy{
+    display :inline-flex;
+    justify-content: space-around;
+    /* justify-items: center; */
+    margin: auto 30%;
+    margin-top: 20px;
+   
+
+}
+.empathy img{
+    width: 8%;
+    height:8%;
+    
+}
+.secondLayer h1{
+    margin-top:15px;
+    font-size:22px;
+}
+.empathy h2{
+    font-size:20px;
+}
+.learningMain{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    /* border:3px solid red; */
+    justify-content: center;
+    margin-bottom:90px;
+    margin-top: 30px;
+    background-color: #fff;   
+}
+ .flexcolumn{
+    
+    width: 30%;
+    height:94vh;
+    border-radius:10px;
+    margin:0 15px ;
+    box-shadow: 3px 6px 24px 6px #888888;
+    /* border:2px red solid; */
+}
+.cardprice{
+    display: flex;
+    justify-content: center;
+}
+.flexcolumn h2{
+    font-size: 19px;
+    color:#0040ff;
+    margin-top:20px;
+}
+.cardprice_price{
+    margin-top:13px;
+    display: flex;
+    justify-content: center;
+   
+   
+}
+.cardprice_price p{
+    color:#0040ff!important;
+    font-weight: 500;
+    font-size:18px;
+    text-decoration: underline overline dotted red;
+    text-decoration: underline wavy blue 5px;
+}
+.learning{
+    height: 25%;
+}
+.learning img{
+    width: 100%;
+    height:100%;
+}
+.cardcontent{
+    padding:10px;
+    margin:5px;
+    /* border:2px red solid; */
+}
+.cardinfo{
+    display:flex;
+    margin-top:5px;
+    /* border:2px yellow solid; */
+}
+.cardinfo p{
+    margin-top:-3px;
+    margin-left:30px;
+}
+/* .cardinfo BsFillCheckCircleFill{
+margin-top:15px;
+} */
+.cardcontent{
+    color: #0040ff;
+    color: #00bfff;
+    color: #3160ec;
+    /* color: #0080ff; */
+    font-size: 20px;
+}
+.cardcontent p{
+    color:black;
+    /* color:#92ABCF; */
+}
+.btnsection{
+    margin-top:  30px;
+}
+.btnsection button{
+    
+    background-color: #3160ec;
+    font-size:20px;
+    border-radius:40px;
+    /* padding:15px; */
+    height:60px;
+}
+.btnsection button:hover{
+   
+    background-color: #0040ff;
+    
+}
+
+@media  (min-width:250px) and (max-width:1200px){
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    main{
+        width: 100vw;
+        border: 1px solid #eaf1fb;
+    }
+    section{
+       
+        width: 97vw;
+        margin-left:3px;
+    }
+      .priceContainer{
+        justify-content: center;
+        display: block;
+       
+        width: 90vw;
+        margin-left:10px;
+      }
+      .empathy{
+        justify-content: center;
+        display: block;
+       
+        
+      }
+      .secondLayer h1{
+        font-size:20px;
+       
+      }
+      .empathy h2{
+        font-size:16px;
+        margin: auto 4%;
+      }
+      .empathy img{
+        width:37px;
+        height:37px;
+        margin: auto 40%;
+      }
+     
+      .flexcolumn{
+        height: 100vh;
+        width:87vw;
+        margin-top:20px;
+      }
+  
+    }
+    
